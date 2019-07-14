@@ -69,6 +69,8 @@ After voting phase is completed the user sends the encrypted ballot and the key 
 - Anyone can check that the number of validations is less or equal than the number of voters
 - Anyone can count votes and get to final result
 
+
+(to see sequence diagram use Typora or similar)
 ```sequence
 User->Administrator: B(E(b))
 Note right of Administrator: Validate user can vote, \n sign it
@@ -144,7 +146,7 @@ the voting storage or network intermediates can check signature, message format 
 - Anyone can check that the hash of the message is present in the validation storage.
 - Anyone can count votes and get to final result
 
-
+(to see sequence diagram use Typora or similar)
 ```sequence
 User->Administrator: B(b+n)+B(H(b+n))
 Note right of Administrator: Validate user can vote, \n sign both
@@ -178,5 +180,4 @@ Assuming blind/unblind are the same strength in the Administrator communication,
 Voter can decide not to share the vote right until the last moment while in FOO scheme that is done is 2nd phase (voting), even though encrypted and can be suitable for later attacks.
 
 ## References
-
-[FOO]: https://link.springer.com/book/10.1007/3-540-57220-1	"Fujioka, A., T. Okamoto and K. Ohta, A practical secret voting scheme for large scale elections,in:   J. Seberry and Y. Zheng, editors, Advances in Cryptology – AUSCRYPT’92 (1992)"
+FOO: https://link.springer.com/book/10.1007/3-540-57220-1	"Fujioka, A., T. Okamoto and K. Ohta, A practical secret voting scheme for large scale elections,in:   J. Seberry and Y. Zheng, editors, Advances in Cryptology – AUSCRYPT’92 (1992)"
